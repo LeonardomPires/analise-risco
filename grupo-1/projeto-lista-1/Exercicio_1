@@ -1,0 +1,12 @@
+Por meio da soma cumulativa "cumsum" e do "plot" type = 'l', ('l' significa em linha) é possivel visualizar graficamente
+a evolução dos resultados dos lançamentos. Além da opção com "hist" que vimos em sala de aula. Como as probabilidades são iguais,
+e os lançamentos independentes, quanto maior o número de lançamentos, maior o equilibrio nos resultados.
+
+qtd.cara <- sample(c(1,0),10,replace=T,prob = (c(0.5,0.5)));plot(cumsum(qtd.cara), type = 'l')
+qtd.cara <- sample(c(1,0),100,replace=T,prob = (c(0.5,0.5)));plot(cumsum(qtd.cara), type = 'l')
+qtd.cara <- sample(c(1,0),1000,replace=T,prob = (c(0.5,0.5)));plot(cumsum(qtd.cara), type = 'l')
+
+ou 
+qtd.cara <- sample(c(1,0),10,replace=T,prob = (c(0.5,0.5)));hist(qtd.cara)
+qtd.cara <- sample(c(1,0),100,replace=T,prob = (c(0.5,0.5)));hist(qtd.cara)
+qtd.cara <- sample(c(1,0),1000,replace=T,prob = (c(0.5,0.5)));hist(qtd.cara)
